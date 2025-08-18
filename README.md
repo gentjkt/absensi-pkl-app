@@ -33,7 +33,7 @@ Sistem absensi modern untuk monitoring kehadiran siswa PKL dengan fitur GPS trac
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/gentjkt/absensi-pkl.git
+git clone https://github.com/gentjkt/absensi-pkl-app.git
 cd absensi-pkl
 ```
 
