@@ -1,4 +1,4 @@
-# 🏢 Sistem Absensi PKL (Praktik Kerja Lapangan)
+# 🏢 Sistem Absensi online basis GPS dan Selfi
 
 Sistem absensi modern untuk monitoring kehadiran siswa PKL dengan fitur GPS tracking, selfie verification, dan real-time monitoring.
 
