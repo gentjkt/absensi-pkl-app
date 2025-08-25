@@ -1,0 +1,106 @@
+# =============================================================================
+# KONFIGURASI ENVIRONMENT APLIKASI ABSENSI PKL
+# =============================================================================
+# Copy file ini menjadi .env dan sesuaikan dengan environment Anda
+# cp env_example.txt .env
+
+# =============================================================================
+# KONFIGURASI DATABASE
+# =============================================================================
+DB_HOST=localhost
+DB_NAME=absensi_pkl
+DB_USER=root
+DB_PASSWORD=
+DB_CHARSET=utf8mb4
+DB_PORT=3306
+
+# =============================================================================
+# KONFIGURASI APLIKASI
+# =============================================================================
+APP_NAME="Absensi PKL"
+APP_ENV=production
+APP_DEBUG=false
+APP_URL=http://localhost
+APP_TIMEZONE=Asia/Jakarta
+
+# =============================================================================
+# KONFIGURASI SECURITY
+# =============================================================================
+APP_KEY=base64:random_key_32_karakter_disini_ganti_dengan_key_yang_aman
+SESSION_SECURE=false
+SESSION_HTTP_ONLY=true
+SESSION_SAMESITE=Lax
+
+# =============================================================================
+# KONFIGURASI UPLOAD
+# =============================================================================
+UPLOAD_MAX_SIZE=10M
+ALLOWED_FILE_TYPES=csv,jpg,jpeg,png,pdf
+UPLOAD_PATH=public/uploads
+
+# =============================================================================
+# KONFIGURASI LOGGING
+# =============================================================================
+LOG_LEVEL=info
+LOG_PATH=logs
+LOG_MAX_FILES=30
+
+# =============================================================================
+# KONFIGURASI EMAIL (Opsional)
+# =============================================================================
+MAIL_DRIVER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=your-email@gmail.com
+MAIL_PASSWORD=your-app-password
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=your-email@gmail.com
+MAIL_FROM_NAME="${APP_NAME}"
+
+# =============================================================================
+# KONFIGURASI CACHE (Opsional)
+# =============================================================================
+CACHE_DRIVER=file
+CACHE_PATH=cache
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+# =============================================================================
+# KONFIGURASI QUEUE (Opsional)
+# =============================================================================
+QUEUE_DRIVER=sync
+QUEUE_CONNECTION=default
+
+# =============================================================================
+# KONFIGURASI THIRD PARTY SERVICES
+# =============================================================================
+# Google Maps API Key (untuk fitur peta)
+GOOGLE_MAPS_API_KEY=your-google-maps-api-key-here
+
+# Firebase Cloud Messaging (untuk push notification)
+FCM_SERVER_KEY=your-fcm-server-key-here
+
+# =============================================================================
+# KONFIGURASI DEVELOPMENT
+# =============================================================================
+# Hanya set true jika development
+DEVELOPMENT_MODE=false
+SHOW_ERRORS=false
+LOG_QUERIES=false
+
+# =============================================================================
+# KONFIGURASI BACKUP
+# =============================================================================
+BACKUP_ENABLED=true
+BACKUP_PATH=backups
+BACKUP_RETENTION_DAYS=30
+BACKUP_TIME=02:00
+
+# =============================================================================
+# KONFIGURASI MONITORING
+# =============================================================================
+MONITORING_ENABLED=true
+HEALTH_CHECK_ENABLED=true
+PERFORMANCE_MONITORING=true
+
